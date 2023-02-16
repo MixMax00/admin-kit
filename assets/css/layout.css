@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
-.main-warper{
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 58px;
     bottom: 0;
     left: 0;
-    padding: 58px 0 0; 
     background-color: var(--main-color);
     width: 270px;
     z-index: 600;
+    -webkit-transition:all .5s ease-in-out;
+    transition:all .7s ease-in-out;
 }
 
 .sidebar .logo{
@@ -26,18 +21,7 @@
     box-shadow: 0 2px 5px 0 rgba(190, 13, 13, 0.05), 0 2px 10px 0 rgb(0 0 0 / 5%);
     z-index: 600;
 }
-.sidebar .logo .logo-img{
-    display: flex;
-}
 
-.sidebar .logo .logo-img img{
-    width: 100px;
-    height: 30px;
-}
-.sidebar .logo .logo-img h3{
-    text-decoration: none;
-    color: var(--white-color);
-}
 
 .sidebar .menu ul li a{
     position: relative;
@@ -46,7 +30,7 @@
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-left: 15px;
     margin-bottom: 3px;
     color: var(--white-color);
@@ -88,6 +72,8 @@
     left: 270px;
     width: 100%;
     height: auto;
+    -webkit-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
 }
 @media (max-width: 991.98px) {
     .main {
@@ -95,14 +81,20 @@
         left: 0;
         width: 100%;
         height: auto;
+        -webkit-transition:all 1s ease-in-out;
+        transition:all 1s ease-in-out;
     }
 
     .sidebar {
-        display: none;
+        -webkit-transition:all 1s ease-in-out;
+        transition:all 1s ease-in-out;
+        z-index: 9999;
     }
+  
+    
 }
 
-.main .header{
+.header{
     width: 100%;
     height: 58px;
     background-color: var(--second-color);
@@ -111,21 +103,83 @@
 }
 
 
+.header .topbar .bars{
+    margin-left: 100px;
+    -webkit-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+}
 
-.main .header .topbar .bars span i{
+
+
+.header .topbar .topbar-logo img{
+    margin-left: 10px;
+    width: 170px;
+    height: 58px;
+    padding: 10px;
+}
+.header .topbar .bars span i{
     font-size: 20px;
     color: var(--white-color);
     padding: 20px 10px 15px 15px;
+    cursor: pointer;
 }
 
-.main .header .topbar .bars h4{
+.header .topbar .bars h4{
     color: var(--white-color);
     font-size: 20px;
     padding: 18px 10px 15px 0px;
 }
 
+.header .topbar .humbarger{
+  display: none;
+}
+
 .hide{
-    background-color: red;
+    -webkit-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+    margin-left: -999px;
+   
+}
+
+.show{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-transition:all .7s ease-in-out;
+    transition:all .7s ease-in-out;
+
+}
+
+
+@media (max-width: 991.98px) {
+    .header .topbar .topbar-logo img{
+        margin-left: 10px;
+        width: 90px;
+        height: 58px;
+        padding: 10px;
+    }
+    .header .topbar .bars{
+        margin-left: 0px;
+    }
+}
+
+
+.hideMobile{
+    position: fixed;
+    top: 58px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    width: 270px;
+    -webkit-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.page-layout{
+    padding: 20px;
 }
 
 

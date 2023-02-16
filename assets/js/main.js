@@ -2,6 +2,9 @@
 
 $(document).ready(function(){
     $("#toggleBar").click(function(){
-        $("#sidebar").classList.toggle(".hide");
+        $("#sidebar").toggleClass("hide");
+        $(".main").toggleClass("show");
+        $(".sidebar").toggleClass("hideMobile");
     });
 });
+
