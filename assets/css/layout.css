@@ -12,7 +12,7 @@
     left: 0;
     padding: 58px 0 0; 
     background-color: var(--main-color);
-    width: 20%;
+    width: 270px;
     z-index: 600;
 }
 
@@ -42,19 +42,19 @@
 .sidebar .menu ul li a{
     position: relative;
     width: 100%;
-    height: 45px;
-    font-size: var(--normal-font-size);
+    height: 50px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    padding-top: 6px;
-    padding-left: 10px;
-    margin: 1px 0px;
+    padding-top: 3px;
+    padding-left: 15px;
+    margin-bottom: 3px;
     color: var(--white-color);
     background-color: var(--second-color);
     z-index: 600;
 }
 .sidebar .menu ul li a i{
-    font-size: 16px;
+    font-size: 22px;
     padding: 8px 5px 8px 0px;
 }
 .sidebar .menu ul li a span i{
@@ -85,8 +85,8 @@
 
 .main{
     position: absolute;
-    left: 20%;
-    width: 80%;
+    left: 270px;
+    width: 100%;
     height: auto;
 }
 @media (max-width: 991.98px) {
@@ -110,11 +110,9 @@
     z-index: 600;
 }
 
-.main .header .topbar .bars button{
 
-}
 
-.main .header .topbar .bars button i{
+.main .header .topbar .bars span i{
     font-size: 20px;
     color: var(--white-color);
     padding: 20px 10px 15px 15px;
