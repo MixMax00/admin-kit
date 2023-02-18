@@ -27,51 +27,91 @@
        
         <!--Sidebar Navigation-->
         <div class="header">
-            <div class="topbar d-flex">
-                <div class="topbar-logo">
-                    <a href="#" class="logo-img">
-                        <img src="https://www.pngitem.com/pimgs/m/4-43262_school-png-photo-transparent-school-logo-png-png.png" alt="">
-                    </a>
-                </div>
-                <div class="bars d-flex">
-                    <span id="toggleBar"><i class="fas fa-bars"></i></span>
-                    <h4>Dashboard</h4>
+            <div class="topbar d-flex justify-content-between">
+                <div class="d-flex">
+                    <div class="topbar-logo">
+                        <a href="#" class="logo-img">
+                            <h3>AdminKIT</h3>
+                        </a>
+                    </div>
+                    <div class="bars d-flex">
+                        <span id="toggleBar"><i class="fas fa-bars"></i></span>
+                    </div>
+                    
+                    <div class="search">
+                        <div class="input-group mb-3">
+                            <input type="search" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search fa-2x"></i></span>
+                          </div>
+                    </div>
                 </div>
                 
-                <div class="search">
+               <div>
+                <ul class="navbar-item d-flex ml-auto">
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/icon/bell.png" class="icon" alt="bell iocn">
+							<p class="count">5</p>
+						</a>
 
-                </div>
-                <div class="users">
+						
+					</li>
 
-                </div>
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user">
+							<img src="assets/images/icon/message.png" class="icon" alt="bell iocn">
+							
+						</a>
+					</li>
+
+					<li class="nav-item dropdown user-profile-dropdown">
+						<a href="#" class="nav-link user profile-user" id="profile">
+							<img src="assets/images/icon/user.png" class="icon user" alt="user iocn">
+						</a>
+					</li>
+				</ul>
+               </div>
             </div>
         </div>
         <!--Main layout-->
         <div class="main">
-            <div id="sidebar" class="sidebar ">
-                <!-- <div class="logo">
-                    <a href="#" class="logo-img">
-                        <img src="https://www.pngitem.com/pimgs/m/4-43262_school-png-photo-transparent-school-logo-png-png.png" alt="">
-                        <h3>Logo</h3>
-                    </a>
-                </div> -->
+            <div id="sidebar" class="sidebar sidebar-hide">
                <div class="menu">
                     <ul>
                         <li>
                             <a href="index.html" class="active"> <i class="fas fa-grip-horizontal" style="color: #FFFFFF;"></i> Dashboard </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-grip-horizontal" style="color: #FF0011;"></i> Calendar</a>
+                            <a href="#"><i class="far fa-calendar-alt" style="color: #FF0011;"></i> Calendar</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fas fa-grip-horizontal" style="color: #B300FF;"></i> Map</a>
+                            <a href="#"><i class="fas fa-map-marker-alt" style="color: #B300FF;"></i> Map</a>
                         </li>
-                        <li>
+                        <li class="sub-menu">
                             <a href="#" >
-                                <i class="fas fa-grip-horizontal" style="color: #08FA03;"></i>
+                                <i class="fas fa-sticky-note" style="color: #08FA03;"></i>
                                 Widgets 
-                                <span><i class="fa fa-angle-down"></i></span>
+                                <span><i class="right fa fa-angle-down"></i></span>
                             </a>
+
+                            <ul class="left-menu-dropdown">
+								<li>
+									<a href="">Users</a>
+								</li>
+								<li>
+									<a href="">Role</a>
+								</li>
+								<li>
+									<a href="">Profile</a>
+								</li>
+								<li>
+									<a href=""> Privicy</a>
+								</li>
+								<li>
+									<a href="">Password</a>
+								</li>
+								
+							</ul>
                         </li>
                         <li>
                             <a href="#">
@@ -120,6 +160,49 @@
         </div>
         <!--Main layout-->
     </div>
+
+
+    <!-- // custom modal -->
+
+    <div class="profile">
+        <div class="dp-main-menu">
+            <div class="dp-profile message-item">
+                <img src="assets/images/icon/user.png" class="user-error" alt="server-error">
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Admin</p>
+                        <p class="error-time"> admin@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class=" message-item">
+              
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Your profile</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="message-item">
+              
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Your setting</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="message-item">
+              
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Logout</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- // custom modal -->
 
     <!-- bootstrap 5 js start -->
     <script src="./assets/jquery/jquery-3.6.3.min.js"></script>
