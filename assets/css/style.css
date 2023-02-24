@@ -1,3 +1,53 @@
 html, body {
     overflow-x: hidden;
 }
+
+
+/* // content design  */
+
+.card{
+    padding:20px 20px 20px 20px
+}
+
+.form .form-label{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.form .form-control{
+    background-color: #e0d8da; /* Green */
+    font-size: 18px;
+    padding: 10px 15px 10px 10px;
+    border: none;
+}
+
+.form .form-select{
+    background-color: #e0d8da; /* Green */
+    font-size: 18px;
+    padding: 10px 15px 10px 10px;
+    border: none;
+}
+
+.form input[type=text]:focus {
+    background-color: rgb(228, 213, 230);
+    border: none;
+  }
+
+/* buttton design css */
+
+.button {
+    background-color: #f31142; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+

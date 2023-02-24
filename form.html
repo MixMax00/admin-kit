@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminKIT</title>
+    <!-- font awesome icon css start -->
+    <link rel="stylesheet" href="./assets/icons/css/all.min.css">
+    <!-- font awesome icon css end -->
+
+    <!-- bootstrap 5 css start -->
+    <link rel="stylesheet" href="./assets/bs5/css/bootstrap.min.css">
+    <!-- bootstrap 5 css start -->
+
+    <!-- custom css start -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- custom css end -->
+
+</head>
+
+<body>
+    <div class="main-warper">
+        <!--Sidebar Navigation-->
+
+        <!--Sidebar Navigation-->
+        <div class="header">
+            <div class="topbar d-flex justify-content-between">
+                <div class="d-flex">
+                    <div class="topbar-logo">
+                        <a href="#" class="logo-img">
+                            <h3>AdminKIT</h3>
+                        </a>
+                    </div>
+                    <div class="bars d-flex">
+                        <span id="toggleBar"><i class="fas fa-bars"></i></span>
+                    </div>
+
+                    <div class="search">
+                        <div class="input-group mb-3">
+                            <input type="search" class="form-control" placeholder="search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search fa-2x"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="navbar-item d-flex ml-auto">
+                        <li class="nav-item dropdown user-profile-dropdown">
+                            <a href="#" class="nav-link user" id="Notify" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/icon/bell.png" class="icon" alt="bell iocn">
+                                <p class="count">5</p>
+                            </a>
+
+
+                        </li>
+
+                        <li class="nav-item dropdown user-profile-dropdown">
+                            <a href="#" class="nav-link user">
+                                <img src="assets/images/icon/message.png" class="icon" alt="bell iocn">
+
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown user-profile-dropdown">
+                            <a href="#" class="nav-link user profile-user" id="profile">
+                                <img src="assets/images/icon/user.png" class="icon user" alt="user iocn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Main layout-->
+        <div class="main">
+            <div id="sidebar" class="sidebar sidebar-hide">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active"> <i class="fas fa-grip-horizontal"
+                                    style="color: #FFFFFF;"></i> Dashboard </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-calendar-alt" style="color: #FF0011;"></i> Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-map-marker-alt" style="color: #B300FF;"></i> Map</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">
+                                <i class="fas fa-sticky-note" style="color: #08FA03;"></i>
+                                Widgets
+                                <span><i class="right fa fa-angle-down"></i></span>
+                            </a>
+
+                            <ul class="left-menu-dropdown">
+                                <li>
+                                    <a href="">Users</a>
+                                </li>
+                                <li>
+                                    <a href="">Role</a>
+                                </li>
+                                <li>
+                                    <a href="">Profile</a>
+                                </li>
+                                <li>
+                                    <a href=""> Privicy</a>
+                                </li>
+                                <li>
+                                    <a href="">Password</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #FAFF01;"></i>
+                                Form Elements
+                                <span><i class="fa fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #01A4FF;"></i>
+                                Charts</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #FD00E4;"></i>
+                                Tables
+                                <span><i class="fa fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #FAFF01;"></i>
+                                Authentication</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #FAFF01;"></i>
+                                Email Templates
+                                <span><i class="fa fa-angle-down"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-grip-horizontal" style="color: #00FFF2;"></i>
+                                Extra Pages</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="page-layout">
+                    <div class="row">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                          </nav>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card shadow">
+                                <form class="row g-3 needs-validation form" novalidate>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom01" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="Mark"
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Last name</label>
+                                        <input type="text" class="form-control " id="validationCustom02" value="Otto"
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustomUsername" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationCustomUsername"
+                                                aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label">State</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-12">
+                                        <button class="button" type="submit">Submit form</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main layout-->
+    </div>
+
+
+    <!-- // custom modal -->
+
+    <div class="profile">
+        <div class="dp-main-menu">
+            <div class="dp-profile message-item">
+                <img src="assets/images/icon/user.png" class="user-error" alt="server-error">
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Admin</p>
+                        <p class="error-time"> admin@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class=" message-item">
+
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Your profile</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="message-item">
+
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Your setting</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="message-item">
+
+                <div class="error-info-dismis">
+                    <div class="error-notifiy-info">
+                        <p class="error-name">Logout</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- // custom modal -->
+
+    <!-- bootstrap 5 js start -->
+    <script src="./assets/jquery/jquery-3.6.3.min.js"></script>
+    <!-- bootstrap 5 js start -->
+
+    <!-- bootstrap 5 js start -->
+    <script src="./assets/bs5/js/bootstrap.min.js"></script>
+    <!-- bootstrap 5 js start -->
+
+    <!-- custom js start -->
+    <script src="./assets/js/main.js"></script>
+    <!-- custom js end -->
+</body>
+
+</html>

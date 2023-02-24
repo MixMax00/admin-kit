@@ -59,6 +59,7 @@
 
 .sidebar .menu ul li a:hover{
     background-color: var(--active-color);
+    border-left: 5px solid #12746F;
 }
 
 .sidebar .menu ul li a.active{
@@ -79,6 +80,11 @@
 .sidebar .menu ul .sub-menu .left-menu-dropdown li a{
     padding-top: 10px;
     padding-left: 43px;
+}
+
+.sidebar .menu ul .sub-menu .left-menu-dropdown li a:hover{
+    background-color: #C14D69;
+    border-left: 5px solid #9C0D30;
 }
 
 
