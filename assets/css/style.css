@@ -2,37 +2,65 @@ html, body {
     overflow-x: hidden;
 }
 
+nav .breadcrumb .breadcrumb-item a,
+nav .breadcrumb .breadcrumb-item{
+    font-size: 18px;
+    font-weight: 400;
+}
+
 
 /* // content design  */
 
 .card{
-    padding:20px 20px 20px 20px
+    padding:20px;
 }
 
 .form .form-label{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 .form .form-control{
-    background-color: #e0d8da; /* Green */
-    font-size: 18px;
-    padding: 10px 15px 10px 10px;
-    border: none;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .form .form-select{
-    background-color: #e0d8da; /* Green */
-    font-size: 18px;
-    padding: 10px 15px 10px 10px;
-    border: none;
+
+    font-size: 16px;
+    padding: 10px;
+
 }
 
-.form input[type=text]:focus {
-    background-color: rgb(228, 213, 230);
-    border: none;
-  }
+/* table design */
+
+.table thead th{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    background-color: var(--active-color);
+    color:var(--white-color);
+    padding: 20px 0px;
+}
+
+.table tbody tr td{
+    font-size: 16px;
+    font-weight: 300;
+    align-items: center;
+    text-align: center;
+    
+}
+.table tbody tr td item{
+    justify-items: center;
+}
+.table tbody tr td img{
+    width: 60px;
+    height: 60px;
+}
+
+
 
 /* buttton design css */
 
@@ -44,10 +72,47 @@ html, body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s;
     border-radius: 5px;
+}
+
+.button:hover{
+    background-color: var(--second-active-color);
+    color: var(--white-color);
+}
+
+
+.button1 {
+    background-color: var(--active-color);
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+.button2{
+    border: none;
+    color: white;
+    padding: 2px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin:6px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+.button2:hover{
+    background-color: var(--second-active-color);
+    color: var(--white-color);
 }
 
 
