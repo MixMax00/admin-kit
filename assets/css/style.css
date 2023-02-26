@@ -116,3 +116,24 @@ nav .breadcrumb .breadcrumb-item{
 }
 
 
+.dataTables_filter{
+    display: none;
+}
+.dataTables_length{
+    display: none;
+}
+
+.serach{
+    position: absolute;
+    right: 10px;
+    top: 103px;
+    width: 300px;
+    height: 35px;
+}
+
+.serach .input-group .input-group-text,
+.serach .input-group input{
+    height: 30px;
+}
+
+

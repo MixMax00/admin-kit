@@ -14,6 +14,7 @@
     <!-- bootstrap 5 css start -->
 
     <!-- custom css start -->
+    <link href="./assets/plugin/datatable/datatables.min.css"/>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
@@ -167,28 +168,18 @@
                                     <div class="row mb-3">
                                         <div class="col-12">
                                             <div class="d-flex justify-content-between">
-                                                <div class="d-flex justify-content-start">
-                                                    <a href="#" class="button2 btn-info">Csv</a>
-                                                    <a href="#" class="button2 btn-info">Excel</a>
-                                                    <a href="#" class="button2 btn-info">PDF</a>
-                                                    <a href="#" class="button2 btn-info">Export</a>
-                                                    <a href="#" class="button2 btn-info">Import</a>
-                                                </div>
-                                                <div class="serach">
-                                                    <form action="">
-                                                        <div class="input-group has-validation">
-                                                            <span class="input-group-text bg-info" id="inputGroupPrepend">Search</span>
-                                                            <input type="text" class="form-control" id="validationCustomUsername"
-                                                                aria-describedby="inputGroupPrepend" required>
-                                                        </div>
-                                                    </form>
-                                                   
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row m-1">
-                                        <table class="table table-bordered table-responsive table-striped">
+                                    <div class="row">
+                                        <div class="serach">
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-info" id="inputGroupPrepend">Search</span>
+                                                <input type="text" id="myInput" class="form-control" placeholder aria-controls="table_id">
+                                            </div>
+                                        </div> 
+                                        <table id="table_id" class="table  table-bordered table-responsive table-striped">
                                             <thead>
                                                 <th>
                                                     Sl
@@ -549,6 +540,8 @@
     <!-- bootstrap 5 js start -->
     <script src="./assets/jquery/jquery-3.6.3.min.js"></script>
     <!-- bootstrap 5 js start -->
+
+    <script src="./assets/plugin/datatable/datatables.min.js"></script>
 
     <!-- bootstrap 5 js start -->
     <script src="./assets/bs5/js/bootstrap.min.js"></script>

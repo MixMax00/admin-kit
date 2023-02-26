@@ -48,9 +48,44 @@ $(document).ready(function(){
 
 
 
+// Datatable
 
-window.$ = window.jquery = require('./node_modules/jquery');
-window.dt = require('./node_modules/datatables.net')();
-window.$('#table_id').DataTable();
+$(document).ready( function () {
+    var table = $('#table_id').DataTable();
+
+    $('#myInput').on('keyup change', function () {
+      table.search(this.value).draw();
+    });
+});
+
+
+$('#table_id').DataTable( {
+  dom: 'Bfrtip',
+    buttons: {
+      buttons: [
+          { extend: 'copy', className: 'button2 btn-info' },
+          { extend: 'excel', className: 'button2 btn-info' },
+          { extend: 'print', className: 'button2 btn-info' },
+          { extend: 'pdf', className: 'button2 btn-info' },
+      ]
+    }
+} );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
